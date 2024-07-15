@@ -36,7 +36,6 @@ Author:Alexis Rodriguez
 An Holberton School Uruguay Project
 */
 
-/* Custom properties task */
 :root{
     --color-primary: #d73953;
     --color-black: #090909;
@@ -83,10 +82,11 @@ An Holberton School Uruguay Project
     --button-hover-color: var(--color-white);
     --button-hover-text-decoration: none;
     --button-hover-background: var(--color-primary);
+
 }
 
 /* Universal box sizing rule */
-*, *:before, *:after{
+  *, *:before, *:after{
     box-sizing: border-box;
 }
 
@@ -104,13 +104,14 @@ body{
     line-height: var(--line-height-base);
 }
 
-/* Heading declarations */
+/* Heading Styles */
 h1, h2, h3, h4, h5, h6{
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
 }
 
-/* Anchor declarations */
+
+/* Anchors Styles */
 a:link{
     color: var(--text-color);
     text-decoration: none;
@@ -128,7 +129,7 @@ a:active{
     background-color: var(--color-light-grey);
 }
 
-/* Button class task */
+/*Class .button Styles */
 .button {
     display: var(--button-display);
     padding: var(--button-padding);
@@ -138,66 +139,70 @@ a:active{
     text-decoration: var(--button-text-decoration);
 }
 
-/* Button hover task */
+/* Class .button:hover Styles */
 .button:hover {
     color: var(--button-hover-color);
     text-decoration: var(--button-hover-text-decoration);
     background: var(--button-hover-background);
 }
 
+/* Class .visual hiden*/
 .visually-hidden{
     display: none;
 }
 
-/*Visually-hidden task*/
+/* Class visually-hidden Styles */
 .visually-hidden{
     display: none;
 }
 
-/* Section card category declarations */
+/* Class card-category Styles */
 .card-category{
     color: var(--color-primary);
-
 }
 
-/* Section card declarations */
+/* Class card-title that is inside card-services Styles */
 .card-services .card-title{
     margin: 0;
 }
 
+/* Class a that is inside card-services Styles */
 .card-services a{
     display: block;
     padding: 2rem;
     background-color: var(--color-light-grey);
 }
 
+/* Class a:hover that is inside card-services Styles */
 .card-services a:hover{
     color: var(--color-white);
     background-color: var(--color-primary);
     text-decoration: none;
 }
 
-/* Section declarations */
+/* Class section Styles */
 .section{
     padding: var(--section-padding);
 }
 
-/* Section header declarations */
+/* Class section-header Styles */
 .section-header{
     text-align: var(--section-header-align);
     padding: var(--section-header-padding);
 }
 
+/* Class section-body Styles */
 .section-body{
     padding: var(--section-body-padding);
 }
 
+/* Class section-footer Styles */
 .section-footer{
     padding: var(--section-footer-padding);
     text-align: var(--section-footer-align);
 }
 
-/* Section title declarations */
+/* Class section-title Styles */
 .section-title{
     font-family: var(--font-family-title);
     font-size: var(--font-size-xx-large);
@@ -206,7 +211,7 @@ a:active{
     color: var(--section-title-color);
 }
 
-/* Section tagline declarations with Updates */
+/* Class section-tagline Styles */
 .section-tagline{
     color: var(--color-primary);
     font-family: var(--font-family-title);
@@ -215,19 +220,19 @@ a:active{
     margin: var(--section-tagline-margin);
 }
 
-/* Container declarations */
+/* Class container Styles */
 .container{
     width: 960px;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Footer declarations */
+/* Class footer Styles */
 .footer{
     padding: var(--footer-padding);
 }
 
-/* Navbar declarations */
+/* Class nav Styles */
 .nav{
     padding: 0;
     margin: 0;
@@ -235,15 +240,28 @@ a:active{
     text-align: center;
 }
 
-/* Navbar menu declarations */
-.navbar-menu{
-    float: right;
+/**
+  * Description: class nav Styles
+  * add padding, margin, list, align
+  */
+.nav{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
 }
+
+/* Class navbar-menu Styles */
 .navbar-menu{
     float: right;
 }
 
-/* Navbar item declarations */
+/* Class navbar-menu Styles */
+.navbar-menu{
+    float: right;
+}
+
+/* Class nav-item Styles */
 .nav .nav-item{
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
@@ -253,78 +271,94 @@ a:active{
     margin: var(--nav-item-margin);
 }
 
-/* Navbar link declarations */
+/* Class nav-link Styles */
 .nav .nav-link{
     display: block;
     padding: 0.5rem 1rem;
 }
 
-/* Navbar link hover declarations */
+/* Class nav-link:hover Styles */
 .nav .nav-link:hover{
     color: var(--nav-item-link-hover);
 }
 
-/* Styles for the row element in the layout */
+/* Class ul.row Styles */
 ul.row{
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-/* Styles for a column that occupies one-third of the width */
+/*  Class col-1-3 Styles */
 .col-1-3{
     width: 33.33%;
 }
 
-/* Styles for a column that occupies half of the width */
+/* Class col-1-3 Styles */
 .col-1-2{
     width: 50%;
 }
 
-/* Styles for the copyright text in the footer */
+/* Class footer-copyright Styles */
 .footer-copyright{
     margin: 0;
     font-size: var(--font-size-small);
     color: var(--text-color);
 }
 
-/* Styles for the unordered list in the footer */
+/* Class .footer ul Styles
+- add text align
+  */
 .footer ul{
     text-align: right;
 }
 
-/* Footer-address task */
+/* Class footer-address Styles
+- add color text
+  */
 .footer-address{
     color: var(--text-color);
 }
 
-/* Social-link task */
+/* Class social-link Styles
+-  add alements as block
+  */
 .social-link{
     display: block;
 }
 
+/* Class social-link childen svg Styles
+-add fill color
+  */
 .social-link > svg{
     fill: var(--text-color);
 }
 
-/* Clearfix task */
+/* Class row ::after Styles
+- add content, display, float
+  */
 .row::after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* Column float task */
-[class^="col-"]{
+/* Class start with col- Styles
+- add float, padding
+  */
+[class^="col-"] {
     float: left;
     padding: 0.5rem;
-}
+    }
 
-/* Dark theme task */
+/*C lass data-section-theme="dark" Styles
+- Update 1: redefine text-color, section-title-color, set color-black variables
+ */
+
 [data-section-theme="dark"]{
+
     --text-color: var(--color-white);
     --section-title-color: var(--color-white);
-    background: var(--color-black);
+    background-color: var(--color-black);
+    --button-color: var(--color-white);
 }
-
-
