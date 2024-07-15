@@ -90,13 +90,26 @@ body{
     line-height: var(--line-height-base);
 }
 
-/* Heading declarations */
+/*
+* Description: Headlings Styles
+* add font-family with Variable --font-family-title
+* Update 1: add font-weight-bold
+*/
+
 h1, h2, h3, h4, h5, h6{
-    font-family: var(--font-family-title);
+    font-family: var(--font-family-title); 
     font-weight: var(--font-weight-bold);
 }
 
-/* Anchor declarations */
+
+/*
+* Description: Anchors Styles
+* set the foreground color value to #161616
+* Update 1: change color for Variable --text-color
+* Update 2: add text-decoration as none
+* Update 3: create state link, visited, hover, active
+*/
+
 a:link{
     color: var(--text-color);
     text-decoration: none;
@@ -114,47 +127,88 @@ a:active{
     background-color: var(--color-light-grey);
 }
 
-/*Visually-hidden task*/
+/*
+* Description: class visually-hidden Styles
+* should have their display to none
+*/
+
 .visually-hidden{
     display: none;
 }
 
-/* Section card category declarations */
+/*
+* Description: class card-category Styles
+* should have their foreground color set to #D73953
+* Update 1: change color for Variable --color-primary
+*
+*/
+
 .card-category{
     color: var(--color-primary);
-
 }
 
-/* Section declarations */
+/*
+* Description: class section Styles
+* add padding
+*/
+
 .section{
     padding: var(--section-padding);
 }
 
-/* Section header declarations */
+/*
+* Description: class section-header Styles
+* Set horizontal alignment of that class with section-header-align
+* Fuente: https://www.w3schools.com/css/css_align.asp
+* Update 1: add padding
+*/
+
 .section-header{
     text-align: var(--section-header-align);
     padding: var(--section-header-padding);
 }
 
+/*
+* Description: class section-body Styles
+* add padding
+*/
+
 .section-body{
     padding: var(--section-body-padding);
+
 }
+
+/*
+* Description: class section-footer Styles
+* add padding and horizontal align
+*/
 
 .section-footer{
     padding: var(--section-footer-padding);
     text-align: var(--section-footer-align);
 }
 
-/* Section title declarations */
+/*
+* Description: class section-title Styles
+* add fonts rules, margin, color
+*/
+
 .section-title{
     font-family: var(--font-family-title);
     font-size: var(--font-size-xx-large);
     font-weight: var(--font-weight-bold);
     margin: var(--section-title-margin);
     color: var(--section-title-color);
+
 }
 
-/* Section tagline declarations with Updates */
+/*
+* Description: class section-tagline Styles
+* should have their foreground color set to #D73953
+* Update 1: change color for Variable --color-primary
+* Update 2: add  font-family,text-transform,font-weight
+*/
+
 .section-tagline{
     color: var(--color-primary);
     font-family: var(--font-family-title);
@@ -162,44 +216,70 @@ a:active{
     font-weight: var(--font-weight-bold);
 }
 
-/* Container declarations */
+/*
+* Description: class container Styles
+* add width, margin left and right as automatic
+*/
+
 .container{
     width: 960px;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Footer declarations */
+/*
+* Description: class footer Styles
+* add padding
+*/
 .footer{
     padding: var(--footer-padding);
 }
 
-/* Nav class styles */
+/*
+* Description: class nav Styles
+* add padding, margin, list, align
+*/
 .nav{
-    margin: 0;
     padding: 0;
+    margin: 0;
     list-style: none;
     text-align: center;
 }
 
+/*
+* Description: class navbar-menu Styles
+* add float
+*/
 .navbar-menu{
     float: right;
 }
 
+/*
+* Description: class nav-item Styles
+* add fonts rules
+*/
 .nav .nav-item{
-    font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
-    font-size: var(--nav-item-font-size);
     letter-spacing: var(--nav-item-letter-spacing);
     display: var(--nav-item-display);
     margin: var(--nav-item-margin);
+    font-family: var(--nav-item-font-family);
 }
+font-size: var(--nav-item-font-size);
 
+/**
+* Description: class nav-link Styles
+* add display and padding
+*/
 .nav .nav-link{
-    display: block;
     padding: 0.5rem 1rem;
+    display: block;
 }
 
+/**
+* Description: class nav-link:hover Styles
+* add color
+*/
 .nav .nav-link:hover{
     color: var(--nav-item-link-hover);
 }
