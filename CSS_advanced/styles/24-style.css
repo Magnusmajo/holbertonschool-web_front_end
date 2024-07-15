@@ -2,19 +2,35 @@
 /*# sourceMappingURL=normalize.min.css.map */
 
 /*
-Target card-title that is inside card-services
+Add custom properties to the root selector in the css file
 
-The margin on all sides should be none at all
-Target a that is inside card-services
+Name: button-display, Value: inline-block
+Name: button-padding, Value: 1.5rem 3rem
+Name: button-border, Value: 0.2rem solid var(--color-primary)
+Name: button-color, Value: color-black
+Name: button-text-decoration, Value: none
+Name: button-font-size, Value: font-size-large
+Name: button-hover-color, Value: color-white
+Name: button-hover-text-decoration, Value: none
+Name: button-hover-background, Value: color-primary
+Add these selectors after the selector for anchor links in active state:
 
-Have them render as block level elements
-The padding should be set to 2x the root element
-Set the background color to the variable color-light-grey
-Target the hover state of a that is inside card-services
+Create the button class selector
 
-Set the foreground color to the variable color-white
-Set the color of the background to the variable color-primary
-Text should not be decorated at all
+Set the display of the button to the variable button-display
+Add padding all around with the variable button-padding
+Style the border with the variable button-border
+Set the size of fonts to the variable button-font-size
+Set the foreground color to the variable button-color
+Decorated text should have the value of the variable button-text-decoration
+Create the hover state of the button class selector
+
+Set the foreground color value to the variable button-hover-color
+Decorated text should have the value of the variable button-hover-text-decoration
+Use the value of the variable button-hover-background for the background
+In [data-section-theme="dark"], add the variable
+
+Create a custom property button-color pointing to the variable color-white
 
 Author:Alexis Rodriguez
 An Holberton School Uruguay Project
@@ -101,6 +117,22 @@ a:hover{
 
 a:active{
     background-color: var(--color-light-grey);
+}
+
+/* Botton */
+.button {
+    display: var(--button-display);
+    padding: var(--button-padding);
+    border: var(--button-border);
+    font-size: var(--button-font-size);
+    color: var(--button-color);
+    text-decoration: var(--button-text-decoration);
+}
+
+.button:hover {
+    color: var(--button-hover-color);
+    text-decoration: var(--button-hover-text-decoration);
+    background: var(--button-hover-background);
 }
 
 /*Visually-hidden task*/
