@@ -128,7 +128,7 @@ a:active{
     background-color: var(--color-light-grey);
 }
 
-/* Botton */
+/* Button class task */
 .button {
     display: var(--button-display);
     padding: var(--button-padding);
@@ -138,10 +138,15 @@ a:active{
     text-decoration: var(--button-text-decoration);
 }
 
+/* Button hover task */
 .button:hover {
     color: var(--button-hover-color);
     text-decoration: var(--button-hover-text-decoration);
     background: var(--button-hover-background);
+}
+
+.visually-hidden{
+    display: none;
 }
 
 /*Visually-hidden task*/
