@@ -184,7 +184,7 @@ a:active{
 }
 
 /* Class card-quote:before that is inside card-testimonial Styles */
-.card-testimonial .card-quote:before{
+.card-testimonial .card-quote::before{
     content: "\201C";
     position: absolute;
     top: -4.5rem;
@@ -194,11 +194,12 @@ a:active{
     z-index: -1;
 }
 
+
 /* Class cite that is inside card-quote that is inside card-testimonial Styles */
 .card-testimonial .card-quote cite{
     display: block;
     padding-top: 1rem;
-    color: var(--color-primary);
+    color: var(--color-primary) ;
 }
 
 /* Card Woks styesm states, and subclasses
