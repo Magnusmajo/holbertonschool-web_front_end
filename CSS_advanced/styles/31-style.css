@@ -349,7 +349,7 @@ z-index: 1;
 /* Class nav-link Styles */
 .nav .nav-link{
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 /* Class nav-link:hover Styles */
