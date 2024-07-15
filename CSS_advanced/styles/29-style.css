@@ -290,11 +290,22 @@ a:active{
     color: var(--nav-item-link-hover);
 }
 
-.nav .nav-item:hover .nav-link::before{
+/* Class nav-link:before Styles */
+.nav .nav-link:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
+    width: 0;
+    height: 20%;
+}
+
+/* Class nav-item:hover nav-link:before Styles */
+.nav .nav-item:hover .nav-link:before{
     background-color: var(--color-primary);
     width: 100%;
 }
-
 
 /* Class ul.row Styles */
 ul.row{
