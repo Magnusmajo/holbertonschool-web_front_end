@@ -1,5 +1,7 @@
 /*
-Style the anchor elements so the text isn’t decorated with anything
+Create a new custom property section-header-align and set it to center
+Just above the section-tagline declaration, create a new declaration targeting the class section-header
+Set horizontal alignment of that class with section-header-align
 
 Author:Alexis Rodriguez
 An Holberton School Uruguay Project
@@ -25,6 +27,7 @@ An Holberton School Uruguay Project
     --line-height-small: 1.2;
     --line-height-base: 1.5;
     --line-height-big: 1.8;
+    --section-header-align: center;
 }
 
 html{
