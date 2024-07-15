@@ -202,30 +202,35 @@ a:active{
     color: var(--nav-item-link-hover);
 }
 
+/* Styles for the row element in the layout */
 ul.row{
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
+/* Styles for a column that occupies one-third of the width */
 .col-1-3{
     width: 33.33%;
     float: left;
     padding: 0.5rem;
 }
 
+/* Styles for a column that occupies half of the width */
 .col-1-2{
     width: 50%;
     float: left;
     padding: 0.5rem;
 }
 
+/* Styles for the copyright text in the footer */
 .footer-copyright{
     margin: 0;
     font-size: var(--font-size-small);
     color: var(--text-color);
 }
 
+/* Styles for the unordered list in the footer */
 .footer ul{
     text-align: right;
 }
