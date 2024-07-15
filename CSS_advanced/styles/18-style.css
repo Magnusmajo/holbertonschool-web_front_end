@@ -155,7 +155,7 @@ a:active{
 }
 
 /* Section tagline declarations with Updates */
-.section-tagline{
+..section-tagline{
     color: var(--color-primary);
     font-family: var(--font-family-title);
     text-transform: var(--section-tagline-transform);
@@ -176,17 +176,19 @@ a:active{
 
 /* Navbar declarations */
 .nav{
-    margin: 0;
     padding: 0;
+    margin: 0;
     list-style: none;
     text-align: center;
 }
 
-.navvar-menu{
+/* Navbar menu declarations */
+.navbar-menu{
     float: right;
 }
 
-.nav-item{
+/* Navbar item declarations */
+.nav .nav-item{
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
@@ -195,12 +197,13 @@ a:active{
     margin: var(--nav-item-margin);
 }
 
-.nav-link{
+/* Navbar link declarations */
+.nav .nav-link{
     display: block;
     padding: 0.5rem 1rem;
 }
 
-.nav-link:hover{
+/* Navbar link hover declarations */
+.nav .nav-link:hover{
     color: var(--nav-item-link-hover);
 }
-
