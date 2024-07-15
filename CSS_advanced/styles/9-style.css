@@ -67,7 +67,12 @@ a{
 
 }
 
-/*/* Section taglinedeclarations */
+/* Section header declarations */
+.section-header{
+    text-align: var(--section-header-align);
+}
+
+/* Section taglinedeclarations */
 .section-tagline{
     color: var(--color-primary);
 }
